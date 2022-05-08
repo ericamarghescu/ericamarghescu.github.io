@@ -1,0 +1,20 @@
+/* .Background {
+   background-color: rgb(160, 177, 168, .3);
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+ } */
+
+ 
+ .Section1 {
+   background-color: rgb(160, 177, 168, .3);
+   height: 100vh;
+   display: flex;
+   margin-top: 12.25vh;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+ }
+ 

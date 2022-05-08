@@ -1,0 +1,176 @@
+.section3 {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(160, 177, 168, .3);
+}
+
+.Panel3 {
+   background-color: white;
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+}
+
+.arrow3:hover {
+   transform: scale(1.2);
+}
+
+.arrow3 {
+   margin-left: 47vw;
+   margin-top: 20vh;
+   width: 200px;
+   height: 250px;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrow3fadein;
+   animation-fill-mode: forwards;
+}
+
+@keyframes arrow3fadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}
+
+.Link {
+   width: 250px;
+   height: 300px;
+}
+
+
+.Projects {
+   background-color: rgba(189, 189, 189, .6);
+   width: 30vw;
+   height: 60vh;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: white;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   padding-left: 50px;
+   font-size: 60px;
+   position: relative;
+   left: 25vw;
+   animation-duration: 1.75s;
+   animation-name: projslidedown;
+   animation-fill-mode: forwards;
+}
+
+@keyframes projslidedown {
+   from {
+      margin-top: 0;
+   }
+
+   to {
+      margin-top: 7vh;
+   }
+}
+
+.RF-Box {
+   height: 250px;
+   width: 500px;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   margin-top: 25px;
+   animation-duration: 1.75s;
+   animation-name: rfslideright;
+   animation-fill-mode: forwards;
+}
+
+@keyframes rfslideright {
+   from {
+      margin-left: 0;
+   }
+
+   to {
+      margin-left: 8vw;
+   }
+}
+
+.HP-Box {
+   height: 250px;
+   width: 500px;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   margin-top: 25px;
+   animation-duration: 1.75s;
+   animation-name: hpslideleft;
+   animation-fill-mode: forwards;
+}
+
+@keyframes hpslideleft {
+   from {
+      right: 0;
+   }
+
+   to {
+      right: 22vw;
+   }
+}
+
+.Sudoku-Box {
+   height: 250px;
+   width: 600px;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   margin-top: 385px;
+   animation-duration: 1.75s;
+   animation-name: sudokuslideright;
+   animation-fill-mode: forwards;
+}
+
+@keyframes sudokuslideright {
+   from {
+      margin-left: 0;
+   }
+
+   to {
+      margin-left: 21vw;
+   }
+}
+
+.RF-Titlebox {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 100px;
+}
+
+.Title {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: x-large;
+}
+
+.Stamp {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: medium;
+   font-style: italic;
+}
+
+.HP-Titlebox {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 70px;
+}
+
+.Sudoku-Titlebox {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 160px;
+}

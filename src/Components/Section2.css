@@ -1,0 +1,151 @@
+.section2 {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(160, 177, 168, .3);
+}
+
+.Skills-Box {
+   background-color: rgba(189, 189, 189, .6);
+   width: 40vw;
+   height: 30vh;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: white;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   padding-left: 50px;
+   font-size: 60px;
+   animation-duration: 1.75s;
+   animation-name: skillsslideright;
+   animation-fill-mode: forwards;
+   position: relative;
+}
+
+@keyframes skillsslideright {
+   from {
+      margin-left: 0;
+   }
+
+   to {
+      margin-left: 12vw;
+   }
+}
+
+.Panel2 {
+   background-color: white;
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+ }
+
+ .Language-Boxes {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 35vw;
+    position: absolute;
+    animation-duration: 1.75s;
+    animation-name: profslideleft;
+    animation-fill-mode: forwards;
+    gap: 50px;
+ }
+
+ .Prof-Langs {
+    height: 20vh;
+    width: inherit;
+    background-color: #FAF1EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .Other-Langs {
+    height: 30vh;
+    width: inherit;
+    background-color: #FAF1EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ @keyframes profslideleft {
+   from {
+      right: 0;
+   }
+
+   to {
+      right: 26vw;
+   }
+ }
+
+ .arrow2:hover {
+   transform: scale(1.2);
+}
+
+.arrow2 {
+   margin-left: 25vw;
+   width: 200px;
+   height: 250px;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrow2fadein;
+   animation-fill-mode: forwards;
+}
+
+@keyframes arrow2fadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}
+
+.Prof-Langs-Title {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: x-large;
+}
+
+.prolangs {
+   display: flex;
+   width: inherit;
+   height: 75%;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.Lang {
+   font-family: sans-serif;
+   font-weight: 100;
+   background-color: white;
+   width: 100px;
+   color: #2b384d;
+   height: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-color: #2b384d;
+   border-width: thin;
+   border: solid;
+}
+
+ 
+
+.Other-Langs-Title {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: x-large;
+}
+
+.otherlangs {
+   display: flex;
+   width: 25vw;
+   height: 75%;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+ 
