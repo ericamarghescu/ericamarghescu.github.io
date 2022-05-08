@@ -1,0 +1,236 @@
+.RF {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(160, 177, 168, .3);
+}
+
+.PanelRF {
+   background-color: white;
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.arrowRF:hover {
+   transform: scale(1.2);
+}
+
+.arrowRF {
+   margin-top: 220px;
+   margin-left: 50px;
+   width: 200px;
+   height: 250px;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrowRFfadein;
+   animation-fill-mode: forwards;
+}
+
+@keyframes arrowRFfadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}
+
+
+.LinkRF {
+   width: 250px;
+   height: 300px;
+}
+
+
+.RF-BoxRF {
+   height: 250px;
+   width: 500px;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   margin-top: 25px;
+   margin-left: 100px;
+   animation-duration: 1.75s;
+   animation-name: rfgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes rfgrow {
+   from {
+      height: 250px;
+      width: 500px;
+   }
+
+   to {
+      margin-top: 0px;
+      margin-left: 0px;
+      height: 75vh;
+      width: 100vw;
+   }
+}
+
+
+.RF-TitleboxRF {
+   margin-top: 240px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 1200px;
+   position: relative;
+   margin-left: 100px;
+   animation-duration: 1.75s;
+   animation-name: rffadein;
+   animation-fill-mode: forwards;
+}
+
+.TitleRF {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: xx-large;
+}
+
+.StampRF {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: medium;
+   font-style: italic;
+}
+
+.rfdisplaybackground {
+   width: 475px;
+   height: 300px;
+   position: absolute;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 325px;
+   margin-top: 10px;
+   animation-duration: 1.75s;
+   animation-name: rffadein;
+   animation-fill-mode: forwards;
+}
+
+.rfdisplay {
+   position: absolute;
+   width: 450px;
+   height: 275px;
+   z-index: 1;
+}
+
+.rfpopup {
+   position: absolute;
+   width: 450px;
+   height: 275px;
+   z-index: 2;
+}
+
+.rfpopupbackground {
+   width: 475px;
+   height: 300px;
+   position: absolute;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 1125px;
+   margin-top: 350px;
+   animation-duration: 1.75s;
+   animation-name: rffadein;
+   animation-fill-mode: forwards;
+}
+
+.rfdescbg {
+   width: 475px;
+   height: 300px;
+   position: absolute;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 1125px;
+   margin-top: 10px;
+   animation-duration: 1.75s;
+   animation-name: rffadein;
+   animation-fill-mode: forwards;
+}
+
+.rfdesc {
+   background-color: #FAF1EA;
+   width: 450px;
+   height: 275px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.desc-title {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: x-large;
+}
+
+.award {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-style: italic;
+   text-align: center;
+}
+
+.desc {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   text-align: center;
+   padding: 10px;
+}
+
+.rftechbg {
+   width: 475px;
+   height: 300px;
+   position: absolute;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 325px;
+   margin-top: 350px;
+   animation-duration: 1.75s;
+   animation-name: rffadein;
+   animation-fill-mode: forwards;
+}
+
+.rftech {
+   background-color: #FAF1EA;
+   width: 450px;
+   height: 275px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.tech-box {
+   font-family: sans-serif;
+   font-weight: 100;
+   background-color: white;
+   border-style: solid;
+   border-color: #2b384d;
+   border-width: 1px;
+   width: 150px;
+   height: 75px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+@keyframes rffadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}

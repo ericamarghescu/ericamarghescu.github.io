@@ -1,0 +1,228 @@
+.SU {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(160, 177, 168, .3);
+}
+
+.PanelSU {
+   background-color: white;
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.arrowSU:hover {
+   transform: scale(1.2);
+}
+
+.arrowSU {
+   margin-top: 220px;
+   margin-left: 50px;
+   width: 200px;
+   height: 250px;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrowSUfadein;
+   animation-fill-mode: forwards;
+}
+
+@keyframes arrowSUfadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}
+
+
+.LinkSU {
+   width: 250px;
+   height: 300px;
+}
+
+
+.Sudoku-BoxSU {
+   height: 250px;
+   width: 500px;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   margin-top: 25px;
+   margin-left: 100px;
+   animation-duration: 1.75s;
+   animation-name: sugrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes sugrow {
+   from {
+      height: 250px;
+      width: 500px;
+   }
+
+   to {
+      margin-top: 0px;
+      margin-left: 0px;
+      height: 75vh;
+      width: 100vw;
+   }
+}
+
+
+.Sudoku-TitleboxSU {
+   margin-top: 240px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 1200px;
+   position: relative;
+   margin-left: 100px;
+   animation-duration: 1.75s;
+   animation-name: sufadein;
+   animation-fill-mode: forwards;
+}
+
+.TitleSU {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: xx-large;
+}
+
+.StampSU {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: medium;
+   font-style: italic;
+}
+
+.sudisplaybackground {
+   width: 475px;
+   height: 300px;
+   position: absolute;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 300px;
+   margin-top: 10px;
+   animation-duration: 1.75s;
+   animation-name: sufadein;
+   animation-fill-mode: forwards;
+}
+
+.sudisplay {
+   position: absolute;
+   width: 450px;
+   height: 275px;
+   z-index: 1;
+}
+
+.supopup {
+   position: absolute;
+   width: 450px;
+   height: 275px;
+   z-index: 2;
+}
+
+.supopupbackground {
+   width: 475px;
+   height: 300px;
+   position: absolute;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 1150px;
+   margin-top: 350px;
+   animation-duration: 1.75s;
+   animation-name: sufadein;
+   animation-fill-mode: forwards;
+}
+
+.sudescbg {
+   width: 475px;
+   height: 300px;
+   position: absolute;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 1150px;
+   margin-top: 10px;
+   animation-duration: 1.75s;
+   animation-name: sufadein;
+   animation-fill-mode: forwards;
+}
+
+.sudesc {
+   background-color: #FAF1EA;
+   width: 450px;
+   height: 275px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.su-desc-title {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: x-large;
+}
+
+.su-desc {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   text-align: center;
+   padding: 20px;
+}
+
+.sutechbg {
+   width: 475px;
+   height: 300px;
+   position: absolute;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 300px;
+   margin-top: 350px;
+   animation-duration: 1.75s;
+   animation-name: sufadein;
+   animation-fill-mode: forwards;
+}
+
+.sutech {
+   background-color: #FAF1EA;
+   width: 450px;
+   height: 275px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.sutech-box {
+   font-family: sans-serif;
+   font-weight: 100;
+   background-color: white;
+   border-style: solid;
+   border-color: #2b384d;
+   border-width: 1px;
+   width: 150px;
+   height: 75px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+@keyframes sufadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}

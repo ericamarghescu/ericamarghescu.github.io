@@ -17,8 +17,8 @@
 }
 
 .arrow3 {
-   margin-left: 47vw;
-   margin-top: 20vh;
+   margin-left: 385px;
+   margin-top: 200px;
    width: 200px;
    height: 250px;
    transition: all .2s ease-in-out;
@@ -40,8 +40,8 @@
 
 .Projects {
    background-color: rgba(189, 189, 189, .6);
-   width: 30vw;
-   height: 60vh;
+   width: 500px;
+   height: 550px;
    font-family: sans-serif;
    font-weight: 100;
    color: white;
@@ -50,8 +50,8 @@
    align-items: center;
    padding-left: 50px;
    font-size: 60px;
-   position: relative;
-   left: 25vw;
+   position: relative, fixed;
+   margin-left: 350px;
    animation-duration: 1.75s;
    animation-name: projslidedown;
    animation-fill-mode: forwards;
@@ -63,7 +63,7 @@
    }
 
    to {
-      margin-top: 7vh;
+      margin-top: 65px;
    }
 }
 
@@ -72,9 +72,11 @@
    width: 500px;
    background-color: #FAF1EA;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    position: absolute;
+   gap: 20px;
+   justify-content: space-around;
    margin-top: 25px;
    animation-duration: 1.75s;
    animation-name: rfslideright;
@@ -87,7 +89,7 @@
    }
 
    to {
-      margin-left: 8vw;
+      margin-left: 100px;
    }
 }
 
@@ -96,7 +98,9 @@
    width: 500px;
    background-color: #FAF1EA;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   gap: 20px;
+   justify-content: space-around;
    align-items: center;
    position: absolute;
    margin-top: 25px;
@@ -107,26 +111,28 @@
 
 @keyframes hpslideleft {
    from {
-      right: 0;
+      margin-left: 100vw;
    }
 
    to {
-      right: 22vw;
+      margin-left: 660px;
    }
 }
 
 .Sudoku-Box {
    height: 250px;
-   width: 600px;
+   width: 500px;
    background-color: #FAF1EA;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    position: absolute;
    margin-top: 385px;
    animation-duration: 1.75s;
    animation-name: sudokuslideright;
    animation-fill-mode: forwards;
+   gap: 20px;
+   justify-content: space-around;
 }
 
 @keyframes sudokuslideright {
@@ -135,15 +141,14 @@
    }
 
    to {
-      margin-left: 21vw;
+      margin-left: 373px;
    }
 }
 
 .RF-Titlebox {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
-   gap: 100px;
 }
 
 .Title {
@@ -163,14 +168,27 @@
 
 .HP-Titlebox {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
-   gap: 70px;
 }
 
 .Sudoku-Titlebox {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
-   gap: 160px;
+}
+
+.Linkproj {
+   width: 100px;
+   height: 150px;
+}
+
+.arrowproj {
+   width: 120px;
+   height: 150px;
+   transition: all .2s ease-in-out;
+}
+
+.arrowproj:hover {
+   transform: scale(1.2);
 }

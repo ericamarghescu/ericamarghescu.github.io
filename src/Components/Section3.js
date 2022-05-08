@@ -25,20 +25,29 @@ export default class Section3 extends React.Component {
                   <h1 className="Title">Recipe Finder</h1>
                   <h2 className="Stamp">Technica Hackathon 2021</h2>
                </div>
+               <Link className="Linkproj" to="/Recipe-Finder">
+                  <img className="arrowproj" src={arrow}/>
+               </Link>
             </div>
             <div className="HP-Box">
                <div className="HP-Titlebox">
                   <h1 className="Title">Honeypot Experiment</h1>
                   <h2 className="Stamp">University of Maryland</h2>
                </div>
+               <Link className="Linkproj" to="/Honeypot-Experiment">
+                  <img className="arrowproj" src={arrow}/>
+               </Link>
             </div>
             <div className="Sudoku-Box">
                <div className="Sudoku-Titlebox">
                   <h1 className="Title">Sudoku App</h1>
-                  <h2 className="Stamp">Summer Project</h2>
+                  <h2 className="Stamp">Personal Project</h2>
                </div>
+               <Link className="Linkproj" to="/Sudoku">
+                  <img className="arrowproj" src={arrow}/>
+               </Link>
             </div>
-            <Link className="Link" to="/Section2">
+            <Link className="Link" to="/Coursework">
             <img className="arrow3" src={arrow}/>
            </Link>
         </div>

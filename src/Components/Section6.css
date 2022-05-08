@@ -1,0 +1,39 @@
+.section6 {
+   width: 100vw;
+   height: 100vh;
+   background-color: white;
+}
+
+.resume {
+   position: absolute;
+   margin-left: 500px;
+   height:1000px;
+   z-index: 1;
+   margin-top: 0;
+}
+
+.resumebox {
+   background-color: rgba(189, 189, 189, .6);
+   height: 300px;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 60px;
+   font-family: sans-serif;
+   font-weight: 100;
+   position: relative;
+   padding-left: 50px;
+   animation-duration: 1.75s;
+   animation-name: reboxslideleft;
+   animation-fill-mode: forwards;
+}
+
+@keyframes reboxslideleft {
+   from {
+      margin-left: 100vw;
+   }
+   to {
+      margin-left: 0;
+   }
+}

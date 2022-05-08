@@ -40,7 +40,7 @@ export default class Section2 extends React.Component {
                   </div>
                </div>
             </div>
-            <Link to="/Section3">
+            <Link to="/Projects">
             <img className="arrow2" src={arrow}/>
            </Link>
         </div>

@@ -1,0 +1,213 @@
+.section4 {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(160, 177, 168, .3);
+}
+
+.Panel4 {
+   background-color: white;
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+}
+
+.arrow4:hover {
+   transform: scale(1.2);
+}
+
+.arrow4 {
+   margin-left: 200px;
+   margin-top: 200px;
+   width: 200px;
+   height: 250px;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrow4fadein;
+   animation-fill-mode: forwards;
+}
+
+@keyframes arrow4fadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}
+
+.Link4 {
+   width: 250px;
+   height: 300px;
+}
+
+.cwbox {
+   background-color: rgba(189, 189, 189, .6);
+   width: 1100px;
+   height: 600px;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: white;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   font-size: 60px;
+   position: relative;
+   animation-duration: 1.75s;
+   animation-name: cwslidedown;
+   animation-fill-mode: forwards;
+   margin-top: 0;
+}
+
+@keyframes cwslidedown {
+   from {
+      margin-left: 0px;
+   }
+
+   to {
+      margin-left: 80px;
+   }
+}
+
+.sem4 {
+   background-color: #FAF1EA;
+   width: 300px;
+   height: 50px;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 30px;
+   border-color: #2b384d;
+   border-style: solid;
+}
+
+.sem3 {
+   background-color: #FAF1EA;
+   width: 300px;
+   height: 50px;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 340px;
+   border-color: #2b384d;
+   border-style: solid;
+}
+
+.sem2 {
+   background-color: #FAF1EA;
+   width: 300px;
+   height: 50px;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 650px;
+   border-color: #2b384d;
+   border-style: solid;
+}
+
+.sem1 {
+   background-color: #FAF1EA;
+   width: 300px;
+   height: 50px;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 960px;
+   border-color: #2b384d;
+   border-style: solid;
+}
+
+.courses {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   height: 500px;
+   animation-duration: 1.75s;
+   animation-name: coursesfadein;
+   animation-fill-mode: forwards;
+}
+
+@keyframes coursesfadein {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+.course4 {
+   background-color: white;
+   border-color: #2b384d;
+   border-style: solid;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   width: 300px;
+   height: 50px;
+   margin-left: 30px;
+   margin-top: 10px;
+   margin-bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.course3 {
+   background-color: white;
+   border-color: #2b384d;
+   border-style: solid;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   width: 300px;
+   height: 50px;
+   margin-left: 339px;
+   margin-top: 10px;
+   margin-bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.course2 {
+   background-color: white;
+   border-color: #2b384d;
+   border-style: solid;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   width: 300px;
+   height: 50px;
+   margin-left: 648px;
+   margin-top: 10px;
+   margin-bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.course1 {
+   background-color: white;
+   border-color: #2b384d;
+   border-style: solid;
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   width: 300px;
+   height: 50px;
+   margin-left: 958px;
+   margin-top: 10px;
+   margin-bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

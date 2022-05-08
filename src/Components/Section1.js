@@ -23,7 +23,7 @@ export default class Section1 extends React.Component {
               <img className="Headshot" src={headshot} width="400" height="400"/>
            </div>
            <div className={this.state.animate ? "tag-slide" : ""} />
-           <Link to="/Section2">
+           <Link to="/Skills">
             <img className="arrow1" src={arrow}/>
            </Link>
            <h1 className={this.state.animate ? "name" : ""}> Erica Marghescu </h1>

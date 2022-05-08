@@ -1,0 +1,88 @@
+# Creates a new container with given values
+CNAME=$1
+PUB_IP=$2
+ROUTE=$3
+MITM_PORT=$4
+# creates new container
+#echo "container made"
+sudo lxc-copy -n template -N $CNAME
+sleep 20s
+sudo lxc-start -n $CNAME
+sleep 5s
+# container ip
+CIP=`sudo lxc-info -n $CNAME | awk 'FNR == 4 {print $2}'`
+echo "cname: $CNAME"
+echo "pub_ip: $PUB_IP"
+echo "route: $ROUTE"
+echo "cip: $CIP"
+# congfigure routing tables
+ip rule add from $CIP table $ROUTE
+# NAT
+sudo iptables -w --table nat --insert PREROUTING --source 0.0.0.0/0 --destination $PUB_IP
+--jump DNAT --to-destination $CIP > /dev/null
+sudo iptables -w --table nat --insert POSTROUTING --source $CIP --destination 0.0.0.0/0
+--jump SNAT --to-source $PUB_IP > /dev/null
+echo "iptables configured"
+# installs MITM
+sudo nohup node /home/HACS200/scripts/MITM/mitm/index.js HACS20X_Test
+"$MITM_PORT" "$CIP" "$CNAME" false mitm_example.js 2>&1 &
+PID=`ps aux | grep "HACS20X_Test $MITM_PORT" | head -1 | awk  '{print $2}'`
+PID2=`ps aux | grep "HACS20X_Test $MITM_PORT" | sed -n '2 p' | awk  '{print $2}'`
+echo "pid: $PID"
+echo "pid2: $PID2"
+sudo iptables -w --table nat --insert PREROUTING --source 0.0.0.0/0 --destination "$PUB_IP"
+--protocol tcp --dport 22 --jump DNAT --to-destination 10.0.3.1:$MITM_PORT
+VALUES=(nodelay 5000000 10000000 15000000 20000000)
+# Choose random IV
+IV=$(($RANDOM%5))
+23
+TIME=${VALUES[$IV]}
+echo $TIME
+# Set delay in CNAME
+TOREPLACE=`sudo grep "auth       optional   pam_faildelay.so"
+/var/lib/lxc/$CNAME/rootfs/etc/pam.d/login | cut -d ' ' -f13`
+echo $TOREPLACE
+sudo sed -i "s/$TOREPLACE/delay=$TIME/g" /var/lib/lxc/$CNAME/rootfs/etc/pam.d/login
+# writes date, container name, IV to log
+echo "$(date), $CNAME, $IV, $PUB_IP, $CIP" >> iv.log
+echo "CALL DETECT ATTACKER"
+# call monitoring script
+# TODO: CHANGE IF location changes
+exec /home/HACS200/detect_attacker $1 $2 $3 $IV $MITM_PORT $PID $PID2
+#!/bin/bash
+#detect_attacker
+if [ $# -ne 7 ]
+then
+echo "./detect_attacker [container-name] [public-ip] [route] [iv] [mitm-port] [pid]
+[pid2]"
+exit 1
+fi
+# set vars
+CNAME=$1
+PUB_IP=$2
+ROUTE=$3
+IV=$4
+MITM_PORT=$5
+PID=$6
+PID2=$7
+LOGPATH="/root/MITM_data/logins/$CNAME.txt"
+echo $LOGPATH
+# TODO: CHANGE FILEPATH
+sudo watch -d -t -g ls -lR $LOGPATH && exec /home/HACS200/destroy_container $1 $2 $3
+$4 $5 $6 $7
+24
+#!/bin/bash
+#destroy_container
+# How long the honeypot should let attacker in
+STIME=180
+if [ $# -ne 7 ]
+then
+echo "./destroy_container [container-name] [public-ip] [route] [iv] [mitm-port] [pid]
+[pid2]"
+exit 1
+fi
+# set vars
+CNAME=$1
+PUB_IP=$2
+ROUTE=$3
+IV=$4

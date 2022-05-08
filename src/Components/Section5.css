@@ -1,0 +1,157 @@
+.section5 {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(160, 177, 168, .3);
+}
+
+.Panel5 {
+   background-color: white;
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+}
+
+.arrow5:hover {
+   transform: scale(1.2);
+}
+
+.arrow5 {
+   margin-left: 100px;
+   margin-top: 200px;
+   width: 200px;
+   height: 250px;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrow5fadein;
+   animation-fill-mode: forwards;
+}
+
+@keyframes arrow5fadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}
+
+.Link5 {
+   width: 250px;
+   height: 300px;
+}
+
+
+.webox {
+   background-color: rgba(189, 189, 189, .6);
+   height: 300px;
+   color: white;
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   font-size: 60px;
+   position: relative;
+   margin-top: 170px;
+   margin-left: 0;
+   animation-duration: 1.75s;
+   animation-name: wegrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes wegrow {
+   from {
+      width: 1000px;
+   }
+   
+   to {
+      width: 1300px;
+   }
+}
+
+.wetitle {
+   font-family: sans-serif;
+   font-weight: 100;
+   font-size: 50px;
+   padding-right: 50px;
+   color: #2b384d;
+}
+
+.threeexps {
+   display: flex;
+   width: 520px;
+   height: 600px;
+   flex-direction: column;
+   margin-left: 20px;
+   position: absolute;
+   margin-top: 30px;
+   justify-content: space-around;
+   animation-duration: 1.75s;
+   animation-name: expfadein;
+   animation-fill-mode: forwards;
+}
+
+@keyframes expfadein {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+.exp {
+   width: inherit;
+   height: 190px;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: column;
+   gap: 0px;
+}
+
+.jobname {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: 23px;
+   padding-left: 20px;
+}
+
+.exp4 {
+   width: 520px;
+   height: 190px;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   margin-left: 550px;
+   margin-top: 36px;
+   animation-duration: 1.75s;
+   animation-name: expfadein;
+   animation-fill-mode: forwards;
+}
+
+.exp5 {
+   width: 520px;
+   height: 190px;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   margin-left: 550px;
+   margin-top: 435px;
+   animation-duration: 1.75s;
+   animation-name: expfadein;
+   animation-fill-mode: forwards;
+}
+
+.location {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: 15px;
+   padding-left: 20px;
+   font-style: italic;
+   margin-top: 0;
+}
+
+.jobdesc {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: 15px;
+   padding-left: 20px;
+   padding-bottom: 20px;
+   padding-right: 20px;
+}
