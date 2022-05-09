@@ -3,7 +3,7 @@ import './Navbar.css';
 import github from './github.png';
 import linkedin from './linkedin1.png';
 import {Link } from "react-router-dom";
-import headshot from '../headshot.jpg';
+import home from './home.png';
 import menu from './menu.png';
 
 export default function Navbar({ showIcons }) {
@@ -22,7 +22,7 @@ export default function Navbar({ showIcons }) {
    return (
       <div className="navbar" style={closeGap}>
          <Link to="/">
-            <img className="headshotmini" src={headshot} style={showNav}/>
+            <img className="headshotmini" src={home} style={showNav}/>
          </Link>
          <a href="https://github.com/ericamarghescu">
             <img className="github-button" src={github} style={showNav}/>

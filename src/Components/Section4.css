@@ -17,7 +17,7 @@
 }
 
 .arrow4 {
-   margin-left: 9vw;
+   left: 86vw;
    margin-top: 23vh;
    width: 14vw;
    height: 25vh;
@@ -25,6 +25,23 @@
    animation-duration: 1.75s;
    animation-name: arrow4fadein;
    animation-fill-mode: forwards;
+   position: absolute;
+}
+
+.backarrow4:hover {
+   transform: scale(1.2);
+}
+
+.backarrow4 {
+   left: 1vw;
+   margin-top: 23vh;
+   width: 14vw;
+   height: 25vh;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrow4fadein;
+   animation-fill-mode: forwards;
+   position: absolute;
 }
 
 @keyframes arrow4fadein {
@@ -34,8 +51,6 @@
 
 .cwbox {
    background-color: rgba(189, 189, 189, .6);
-   width: 65vw;
-   height: 60vh;
    font-family: sans-serif;
    font-weight: 100;
    font-size: 4vw;
@@ -48,15 +63,18 @@
    animation-name: cwslidedown;
    animation-fill-mode: forwards;
    margin-top: 0;
+   margin-left: 22vw;
 }
 
 @keyframes cwslidedown {
    from {
-      margin-left: 0;
+      width: 55vw;
+      height: 20vh;
    }
 
    to {
-      margin-left: 5vw;
+      width: 55vw;
+      height: 60vh;
    }
 }
 
@@ -71,7 +89,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 1.8vw;
+   margin-left: 2vw;
    border-color: #2b384d;
    border-style: solid;
    font-size: 1.4vw;
@@ -105,7 +123,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 38.2vw;
+   margin-left: 38vw;
    border-color: #2b384d;
    border-style: solid;
    font-size: 1.4vw;
@@ -122,7 +140,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 56.35vw;
+   margin-left: 56vw;
    border-color: #2b384d;
    border-style: solid;
    font-size: 1.4vw;
@@ -132,7 +150,9 @@
    position: absolute;
    display: flex;
    flex-direction: column;
-   height: 500px;
+   height: 50vh;
+   left: 12vw;
+   width: 70vw;
    animation-duration: 1.75s;
    animation-name: coursesfadein;
    animation-fill-mode: forwards;
@@ -152,8 +172,8 @@
    color: #2b384d;
    width: 17.5vw;
    height: 5.5vh;
-   margin-left: 30px;
-   margin-top: 10px;
+   margin-left: 2vw;
+   margin-top: 1vh;
    margin-bottom: 0;
    display: flex;
    justify-content: center;
@@ -171,7 +191,7 @@
    width: 17.5vw;
    height: 5.5vh;
    margin-left: 20vw;
-   margin-top: 10px;
+   margin-top: 1vh;
    margin-bottom: 0;
    display: flex;
    justify-content: center;
@@ -188,8 +208,8 @@
    color: #2b384d;
    width: 17.5vw;
    height: 5.5vh;
-   margin-left: 38.2vw;
-   margin-top: 10px;
+   margin-left: 38vw;
+   margin-top: 1vh;
    margin-bottom: 0;
    display: flex;
    justify-content: center;
@@ -207,8 +227,8 @@
    width: 17.5vw;
    font-size: .9vw;
    height: 5.5vh;
-   margin-left: 56.35vw;
-   margin-top: 10px;
+   margin-left: 56vw;
+   margin-top: 1vh;
    margin-bottom: 0;
    display: flex;
    justify-content: center;

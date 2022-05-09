@@ -17,6 +17,22 @@
 }
 
 .arrow5 {
+   left: 85vw;
+   margin-top: 23vh;
+   width: 14vw;
+   height: 25vh;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrow5fadein;
+   animation-fill-mode: forwards;
+   position: absolute;
+}
+
+.backarrow5:hover {
+   transform: scale(1.2);
+}
+
+.backarrow5 {
    margin-left: 2vw;
    margin-top: 23vh;
    width: 14vw;
@@ -43,7 +59,7 @@
    font-size: 4vw;
    position: relative;
    margin-top: 18vh;
-   margin-left: 0;
+   margin-left: 1vw;
    animation-duration: 1.75s;
    animation-name: wegrow;
    animation-fill-mode: forwards;
@@ -51,11 +67,11 @@
 
 @keyframes wegrow {
    from {
-      width: 60vw;
+      width: 40vw;
    }
    
    to {
-      width: 76vw;
+      width: 69vw;
    }
 }
 
@@ -69,10 +85,10 @@
 
 .threeexps {
    display: flex;
-   width: 30.8vw;
+   width: 28vw;
    height: 65.5vh;
    flex-direction: column;
-   margin-left: 1.2vw;
+   margin-left: 14.3vw;
    position: absolute;
    margin-top: 30px;
    justify-content: space-around;
@@ -104,13 +120,13 @@
 }
 
 .exp4 {
-   width: 30.8vw;
+   width: 28vw;
    height: 20.5vh;
    background-color: #FAF1EA;
    display: flex;
    flex-direction: column;
    position: absolute;
-   margin-left: 32.7vw;
+   margin-left: 43vw;
    margin-top: 4vh;
    animation-duration: 1.75s;
    animation-name: expfadein;
@@ -118,13 +134,13 @@
 }
 
 .exp5 {
-   width: 30.8vw;
+   width: 28vw;
    height: 20.5vh;
    background-color: #FAF1EA;
    display: flex;
    flex-direction: column;
    position: absolute;
-   margin-left: 32.7vw;
+   margin-left: 43vw;
    margin-top: 47.7vh;
    animation-duration: 1.75s;
    animation-name: expfadein;

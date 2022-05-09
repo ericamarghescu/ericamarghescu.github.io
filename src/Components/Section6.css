@@ -6,24 +6,42 @@
 
 .resume {
    position: absolute;
-   margin-left: 25vw;
+   margin-left: 30vw;
    height:100vh;
    z-index: 1;
    margin-top: 0;
+   top: 12.25vh;
+}
+
+.backarrow6 {
+   left: 1vw;
+   top: 40vh;
+   width: 14vw;
+   height: 25vh;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrow5fadein;
+   animation-fill-mode: forwards;
+   position: absolute;
+}
+
+.backarrow6:hover {
+   transform: scale(1.2);
 }
 
 .resumebox {
    background-color: rgba(189, 189, 189, .6);
-   height: 30vh;
+   height: 100vh;
    color: white;
    display: flex;
-   flex-direction: row;
-   align-items: center;
+   flex-direction: row-reverse;
    font-size: 3vw;
    font-family: sans-serif;
    font-weight: 100;
    position: relative;
-   padding-left: 3vw;
+   margin-top: 0;
+   padding-right: 6vw;
+   padding-top: 37vh;
    animation-duration: 1.75s;
    animation-name: reboxslideleft;
    animation-fill-mode: forwards;
@@ -31,9 +49,9 @@
 
 @keyframes reboxslideleft {
    from {
-      margin-left: 100vw;
+      margin-right: 40vw;
    }
    to {
-      margin-left: 0;
+      margin-right: 0;
    }
 }

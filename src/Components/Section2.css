@@ -28,7 +28,7 @@
    }
 
    to {
-      margin-left: 12vw;
+      margin-left: 6vw;
    }
 }
 
@@ -50,7 +50,7 @@
     animation-name: profslideleft;
     animation-fill-mode: forwards;
     gap: 3vw;
-    margin-left: 37vw;
+    margin-left: 47vw;
  }
 
  .Prof-Langs {
@@ -81,7 +81,28 @@
 }
 
 .arrow2 {
-   margin-left: 25vw;
+   left: 85vw;
+   width: 14vw;
+   height: 25vh;
+   transition: all .2s ease-in-out;
+   animation-duration: 1.75s;
+   animation-name: arrow2fadein;
+   animation-fill-mode: forwards;
+   position: absolute;
+   top: 37vh;
+}
+
+@keyframes arrow2fadein {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}
+
+.backarrow2:hover {
+   transform: scale(1.2);
+}
+
+.backarrow2 {
+   margin-left: 1vw;
    width: 14vw;
    height: 25vh;
    transition: all .2s ease-in-out;
@@ -90,10 +111,6 @@
    animation-fill-mode: forwards;
 }
 
-@keyframes arrow2fadein {
-   0% {opacity:0;}
-   100% {opacity:1;}
-}
 
 .Prof-Langs-Title {
    font-family: sans-serif;

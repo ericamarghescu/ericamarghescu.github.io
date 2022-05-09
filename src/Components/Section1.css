@@ -27,9 +27,10 @@
    opacity: 1;
    z-index: 1;
    position: absolute;
-   width: 27vw;
-   height: 48vh;
+   width: 450px;
+   height: 450px;
  }
+
  
  .tag-slide {
    background-color: #FAF1EA;
@@ -37,73 +38,39 @@
    height: 20vh;
    position: relative;
    left: 35vw;
-   animation-duration: 1.75s;
-   animation-name: slidedown;
-   animation-fill-mode: forwards;
+   margin-top: 10vh;
  }
  
- @keyframes slidedown {
-   from {
-     margin-top: 0;
-   }
- 
-   to {
-     margin-top: 10vh;
-   }
- }
  
  .name {
    color: #2b384d;
-   animation-duration: 1.75s;
-   animation-name: nameslideleft;
-   animation-fill-mode: forwards;
    z-index: 5;
    top: 24vh;
    position: absolute;
    font-family:sans-serif;
    font-weight: 100;
    font-size: 2vw;
- }
- 
- @keyframes nameslideleft {
-   from {
-     margin-left: 80vw;
-   }
- 
-   to {
-     margin-left: 47vw;
-   }
+   margin-left: 47vw;
  }
  
  .description {
    color: #2b384d;
-   animation-duration: 1.75s;
-   animation-name: descslideleft;
-   animation-fill-mode: forwards;
    z-index: 5;
    top: 32vh;
    position: absolute;
    font-family: sans-serif;
    font-weight: 100;
    font-size: 1.15vw;
+   margin-left: 45vw;
  }
  
- @keyframes descslideleft {
-   from {
-     margin-left: 80vw;
-   }
- 
-   to {
-     margin-left: 45vw;
-   }
- }
 
 .arrow1:hover {
     transform: scale(1.2);
  }
 
  .arrow1 {
-    margin-left: 80vw;
+    margin-left: 85vw;
     width: 14vw;
     height: 25vh;
     transition: all .2s ease-in-out;

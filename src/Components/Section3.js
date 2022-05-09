@@ -1,8 +1,9 @@
 import React from "react";
-import './Section2.css'
-import arrow from './arrow.png'
+import './Section2.css';
+import arrow from './arrow.png';
 import {Link } from "react-router-dom";
 import './Section3.css'
+import backarrow from './backarrow.png';
 
 export default class Section3 extends React.Component {
 
@@ -19,6 +20,9 @@ export default class Section3 extends React.Component {
     return (
       <div className="section3"> 
          <div className= "Panel3">
+            <Link to="/Skills">
+               <img className="backarrow3" src={backarrow}/>
+           </Link>
             <h1 className="Projects">P R O J E C T S</h1>
             <div className="RF-Box">
                <div className="RF-Titlebox">
@@ -48,7 +52,7 @@ export default class Section3 extends React.Component {
                </Link>
             </div>
             <Link className="Link" to="/Coursework">
-            <img className="arrow3" src={arrow}/>
+               <img className="arrow3" src={arrow}/>
            </Link>
         </div>
       </div>
