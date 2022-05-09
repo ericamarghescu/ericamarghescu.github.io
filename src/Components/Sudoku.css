@@ -18,10 +18,10 @@
 }
 
 .arrowSU {
-   margin-top: 220px;
-   margin-left: 50px;
-   width: 200px;
-   height: 250px;
+   margin-top: 24vh;
+   margin-left: 3vw;
+   width: 14vw;
+   height: 25vh;
    transition: all .2s ease-in-out;
    animation-duration: 1.75s;
    animation-name: arrowSUfadein;
@@ -34,21 +34,15 @@
 }
 
 
-.LinkSU {
-   width: 250px;
-   height: 300px;
-}
-
-
 .Sudoku-BoxSU {
-   height: 250px;
-   width: 500px;
+   height: inherit;
+   width: 30vw;
    background-color: #FAF1EA;
    display: flex;
    flex-direction: row;
    position: absolute;
-   margin-top: 25px;
-   margin-left: 100px;
+   margin-top: 1.5vw;
+   margin-left: 6vw;
    animation-duration: 1.75s;
    animation-name: sugrow;
    animation-fill-mode: forwards;
@@ -56,8 +50,8 @@
 
 @keyframes sugrow {
    from {
-      height: 250px;
-      width: 500px;
+      height: 27.5vh;
+      width: 30vw;
    }
 
    to {
@@ -70,13 +64,13 @@
 
 
 .Sudoku-TitleboxSU {
-   margin-top: 240px;
+   margin-top: 23vh;
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 1200px;
+   width: 67vw;
    position: relative;
-   margin-left: 100px;
+   margin-left: 6vw;
    animation-duration: 1.75s;
    animation-name: sufadein;
    animation-fill-mode: forwards;
@@ -86,26 +80,26 @@
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   font-size: xx-large;
+   font-size: 1.9vw;
 }
 
 .StampSU {
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   font-size: medium;
+   font-size: 1vw;
    font-style: italic;
 }
 
 .sudisplaybackground {
-   width: 475px;
-   height: 300px;
+   width: 28vw;
+   height: 34vh;
    position: absolute;
    background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 300px;
+   margin-left: 19vw;
    margin-top: 10px;
    animation-duration: 1.75s;
    animation-name: sufadein;
@@ -114,43 +108,43 @@
 
 .sudisplay {
    position: absolute;
-   width: 450px;
-   height: 275px;
+   width: 95%;
+   height: 93%;
    z-index: 1;
 }
 
 .supopup {
    position: absolute;
-   width: 450px;
-   height: 275px;
+   width: 95%;
+   height: 93%;
    z-index: 2;
 }
 
 .supopupbackground {
-   width: 475px;
-   height: 300px;
+   width: 28vw;
+   height: 34vh;
    position: absolute;
    background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 1150px;
-   margin-top: 350px;
+   margin-left: 65.5vw;
+   margin-top: 39vh;
    animation-duration: 1.75s;
    animation-name: sufadein;
    animation-fill-mode: forwards;
 }
 
 .sudescbg {
-   width: 475px;
-   height: 300px;
+   width: 28vw;
+   height: 34vh;
    position: absolute;
    background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 1150px;
-   margin-top: 10px;
+   margin-left: 65.5vw;
+   margin-top: .6vw;
    animation-duration: 1.75s;
    animation-name: sufadein;
    animation-fill-mode: forwards;
@@ -158,8 +152,8 @@
 
 .sudesc {
    background-color: #FAF1EA;
-   width: 450px;
-   height: 275px;
+   width: 95%;
+   height: 93%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -170,7 +164,16 @@
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   font-size: x-large;
+   font-size: 1.6vw;
+}
+
+.suaward {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-style: italic;
+   text-align: center;
+   font-size: 1vw;
 }
 
 .su-desc {
@@ -178,19 +181,20 @@
    font-weight: 100;
    color: #2b384d;
    text-align: center;
-   padding: 20px;
+   padding: 10px;
+   font-size: 1vw;
 }
 
 .sutechbg {
-   width: 475px;
-   height: 300px;
+   width: 28vw;
+   height: 34vh;
    position: absolute;
    background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 300px;
-   margin-top: 350px;
+   margin-left: 19vw;
+   margin-top: 39vh;
    animation-duration: 1.75s;
    animation-name: sufadein;
    animation-fill-mode: forwards;
@@ -198,8 +202,8 @@
 
 .sutech {
    background-color: #FAF1EA;
-   width: 450px;
-   height: 275px;
+   width: 95%;
+   height: 93%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -209,12 +213,13 @@
 .sutech-box {
    font-family: sans-serif;
    font-weight: 100;
+   font-size: .85vw;
    background-color: white;
    border-style: solid;
    border-color: #2b384d;
    border-width: 1px;
-   width: 150px;
-   height: 75px;
+   width: 9vw;
+   height: 4.5vw;
    text-align: center;
    display: flex;
    align-items: center;

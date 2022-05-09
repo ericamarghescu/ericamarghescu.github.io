@@ -6,15 +6,15 @@
 
 .Panel1 {
    background-color: white;
-   height: 75vh;
+   height: 65vh;
    width: 100vw;
    top: 12.25vh;
  }
  
  .Panel-Rectangle {
    background-color: rgba(189, 189, 189, .6);
-   height: 550px;
-   width: 950px;
+   height: 60vh;
+   width: 55vw;
    top: 12.25vh;
    display: flex;
    align-content: center;
@@ -27,14 +27,16 @@
    opacity: 1;
    z-index: 1;
    position: absolute;
+   width: 27vw;
+   height: 48vh;
  }
  
  .tag-slide {
    background-color: #FAF1EA;
-   width: 600px;
-   height: 185px;
+   width: 35vw;
+   height: 20vh;
    position: relative;
-   left: 600px;
+   left: 35vw;
    animation-duration: 1.75s;
    animation-name: slidedown;
    animation-fill-mode: forwards;
@@ -46,7 +48,7 @@
    }
  
    to {
-     margin-top: 100px;
+     margin-top: 10vh;
    }
  }
  
@@ -56,10 +58,11 @@
    animation-name: nameslideleft;
    animation-fill-mode: forwards;
    z-index: 5;
-   top: 225px;
+   top: 24vh;
    position: absolute;
    font-family:sans-serif;
    font-weight: 100;
+   font-size: 2vw;
  }
  
  @keyframes nameslideleft {
@@ -68,7 +71,7 @@
    }
  
    to {
-     margin-left: 810px;
+     margin-left: 47vw;
    }
  }
  
@@ -78,10 +81,11 @@
    animation-name: descslideleft;
    animation-fill-mode: forwards;
    z-index: 5;
-   top: 300px;
+   top: 32vh;
    position: absolute;
    font-family: sans-serif;
    font-weight: 100;
+   font-size: 1.15vw;
  }
  
  @keyframes descslideleft {
@@ -90,7 +94,7 @@
    }
  
    to {
-     margin-left: 770px;
+     margin-left: 45vw;
    }
  }
 
@@ -99,13 +103,15 @@
  }
 
  .arrow1 {
-    margin-left: 1300px;
-    width: 200px;
-    height: 250px;
+    margin-left: 80vw;
+    width: 14vw;
+    height: 25vh;
     transition: all .2s ease-in-out;
     animation-duration: 1.75s;
     animation-name: arrow1fadein;
     animation-fill-mode: forwards;
+    position: absolute;
+    top: 35vh;
  }
 
  @keyframes arrow1fadein {

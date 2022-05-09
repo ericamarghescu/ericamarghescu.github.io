@@ -18,10 +18,10 @@
 }
 
 .arrowHP {
-   margin-top: 220px;
-   margin-left: 50px;
-   width: 200px;
-   height: 250px;
+   margin-top: 24vh;
+   margin-left: 3vw;
+   width: 14vw;
+   height: 25vh;
    transition: all .2s ease-in-out;
    animation-duration: 1.75s;
    animation-name: arrowHPfadein;
@@ -34,21 +34,15 @@
 }
 
 
-.LinkHP {
-   width: 250px;
-   height: 300px;
-}
-
-
 .HP-BoxHP {
-   height: 250px;
-   width: 500px;
+   height: inherit;
+   width: 30vw;
    background-color: #FAF1EA;
    display: flex;
    flex-direction: row;
    position: absolute;
-   margin-top: 25px;
-   margin-left: 100px;
+   margin-top: 1.5vw;
+   margin-left: 6vw;
    animation-duration: 1.75s;
    animation-name: hpgrow;
    animation-fill-mode: forwards;
@@ -56,8 +50,8 @@
 
 @keyframes hpgrow {
    from {
-      height: 250px;
-      width: 500px;
+      height: 27.5vh;
+      width: 30vw;
    }
 
    to {
@@ -70,13 +64,13 @@
 
 
 .HP-TitleboxHP {
-   margin-top: 240px;
+   margin-top: 23vh;
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 1200px;
+   width: 67vw;
    position: relative;
-   margin-left: 100px;
+   margin-left: 6vw;
    animation-duration: 1.75s;
    animation-name: hpfadein;
    animation-fill-mode: forwards;
@@ -86,26 +80,26 @@
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   font-size: xx-large;
+   font-size: 1.9vw;
 }
 
 .StampHP {
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   font-size: medium;
+   font-size: 1vw;
    font-style: italic;
 }
 
 .hpdisplaybackground {
-   width: 475px;
-   height: 300px;
+   width: 28vw;
+   height: 34vh;
    position: absolute;
    background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 300px;
+   margin-left: 19vw;
    margin-top: 10px;
    animation-duration: 1.75s;
    animation-name: hpfadein;
@@ -114,43 +108,43 @@
 
 .hpdisplay {
    position: absolute;
-   width: 450px;
-   height: 275px;
+   width: 95%;
+   height: 93%;
    z-index: 1;
 }
 
 .hppopup {
    position: absolute;
-   width: 450px;
-   height: 275px;
+   width: 95%;
+   height: 93%;
    z-index: 2;
 }
 
 .hppopupbackground {
-   width: 475px;
-   height: 300px;
+   width: 28vw;
+   height: 34vh;
    position: absolute;
    background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 1150px;
-   margin-top: 350px;
+   margin-left: 65.5vw;
+   margin-top: 39vh;
    animation-duration: 1.75s;
    animation-name: hpfadein;
    animation-fill-mode: forwards;
 }
 
 .hpdescbg {
-   width: 475px;
-   height: 300px;
+   width: 28vw;
+   height: 34vh;
    position: absolute;
    background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 1150px;
-   margin-top: 10px;
+   margin-left: 65.5vw;
+   margin-top: .6vw;
    animation-duration: 1.75s;
    animation-name: hpfadein;
    animation-fill-mode: forwards;
@@ -158,8 +152,8 @@
 
 .hpdesc {
    background-color: #FAF1EA;
-   width: 450px;
-   height: 275px;
+   width: 95%;
+   height: 93%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -170,7 +164,16 @@
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   font-size: x-large;
+   font-size: 1.6vw;
+}
+
+.hpaward {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-style: italic;
+   text-align: center;
+   font-size: 1vw;
 }
 
 .hp-desc {
@@ -179,18 +182,19 @@
    color: #2b384d;
    text-align: center;
    padding: 10px;
+   font-size: 1vw;
 }
 
 .hptechbg {
-   width: 475px;
-   height: 300px;
+   width: 28vw;
+   height: 34vh;
    position: absolute;
    background-color: white;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 300px;
-   margin-top: 350px;
+   margin-left: 19vw;
+   margin-top: 39vh;
    animation-duration: 1.75s;
    animation-name: hpfadein;
    animation-fill-mode: forwards;
@@ -198,8 +202,8 @@
 
 .hptech {
    background-color: #FAF1EA;
-   width: 450px;
-   height: 275px;
+   width: 95%;
+   height: 93%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -209,12 +213,13 @@
 .hptech-box {
    font-family: sans-serif;
    font-weight: 100;
+   font-size: .85vw;
    background-color: white;
    border-style: solid;
    border-color: #2b384d;
    border-width: 1px;
-   width: 150px;
-   height: 75px;
+   width: 9vw;
+   height: 4.5vw;
    text-align: center;
    display: flex;
    align-items: center;

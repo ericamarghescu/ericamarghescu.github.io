@@ -17,10 +17,10 @@
 }
 
 .arrow4 {
-   margin-left: 200px;
-   margin-top: 200px;
-   width: 200px;
-   height: 250px;
+   margin-left: 9vw;
+   margin-top: 23vh;
+   width: 14vw;
+   height: 25vh;
    transition: all .2s ease-in-out;
    animation-duration: 1.75s;
    animation-name: arrow4fadein;
@@ -32,22 +32,17 @@
    100% {opacity:1;}
 }
 
-.Link4 {
-   width: 250px;
-   height: 300px;
-}
-
 .cwbox {
    background-color: rgba(189, 189, 189, .6);
-   width: 1100px;
-   height: 600px;
+   width: 65vw;
+   height: 60vh;
    font-family: sans-serif;
    font-weight: 100;
+   font-size: 4vw;
    color: white;
    display: flex;
    flex-direction: column-reverse;
    align-items: center;
-   font-size: 60px;
    position: relative;
    animation-duration: 1.75s;
    animation-name: cwslidedown;
@@ -57,18 +52,18 @@
 
 @keyframes cwslidedown {
    from {
-      margin-left: 0px;
+      margin-left: 0;
    }
 
    to {
-      margin-left: 80px;
+      margin-left: 5vw;
    }
 }
 
 .sem4 {
    background-color: #FAF1EA;
-   width: 300px;
-   height: 50px;
+   width: 17.5vw;
+   height: 5.5vh;
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
@@ -76,15 +71,16 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 30px;
+   margin-left: 1.8vw;
    border-color: #2b384d;
    border-style: solid;
+   font-size: 1.4vw;
 }
 
 .sem3 {
    background-color: #FAF1EA;
-   width: 300px;
-   height: 50px;
+   width: 17.5vw;
+   height: 5.5vh;
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
@@ -92,15 +88,16 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 340px;
+   margin-left: 20vw;
    border-color: #2b384d;
    border-style: solid;
+   font-size: 1.4vw;
 }
 
 .sem2 {
    background-color: #FAF1EA;
-   width: 300px;
-   height: 50px;
+   width: 17.5vw;
+   height: 5.5vh;
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
@@ -108,15 +105,16 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 650px;
+   margin-left: 38.2vw;
    border-color: #2b384d;
    border-style: solid;
+   font-size: 1.4vw;
 }
 
 .sem1 {
    background-color: #FAF1EA;
-   width: 300px;
-   height: 50px;
+   width: 17.5vw;
+   height: 5.5vh;
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
@@ -124,9 +122,10 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 960px;
+   margin-left: 56.35vw;
    border-color: #2b384d;
    border-style: solid;
+   font-size: 1.4vw;
 }
 
 .courses {
@@ -151,14 +150,15 @@
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   width: 300px;
-   height: 50px;
+   width: 17.5vw;
+   height: 5.5vh;
    margin-left: 30px;
    margin-top: 10px;
    margin-bottom: 0;
    display: flex;
    justify-content: center;
    align-items: center;
+   font-size: .9vw;
 }
 
 .course3 {
@@ -168,14 +168,15 @@
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   width: 300px;
-   height: 50px;
-   margin-left: 339px;
+   width: 17.5vw;
+   height: 5.5vh;
+   margin-left: 20vw;
    margin-top: 10px;
    margin-bottom: 0;
    display: flex;
    justify-content: center;
    align-items: center;
+   font-size: .9vw;
 }
 
 .course2 {
@@ -185,14 +186,15 @@
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   width: 300px;
-   height: 50px;
-   margin-left: 648px;
+   width: 17.5vw;
+   height: 5.5vh;
+   margin-left: 38.2vw;
    margin-top: 10px;
    margin-bottom: 0;
    display: flex;
    justify-content: center;
    align-items: center;
+   font-size: .9vw;
 }
 
 .course1 {
@@ -202,9 +204,10 @@
    font-family: sans-serif;
    font-weight: 100;
    color: #2b384d;
-   width: 300px;
-   height: 50px;
-   margin-left: 958px;
+   width: 17.5vw;
+   font-size: .9vw;
+   height: 5.5vh;
+   margin-left: 56.35vw;
    margin-top: 10px;
    margin-bottom: 0;
    display: flex;

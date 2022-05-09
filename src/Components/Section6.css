@@ -6,24 +6,24 @@
 
 .resume {
    position: absolute;
-   margin-left: 500px;
-   height:1000px;
+   margin-left: 25vw;
+   height:100vh;
    z-index: 1;
    margin-top: 0;
 }
 
 .resumebox {
    background-color: rgba(189, 189, 189, .6);
-   height: 300px;
+   height: 30vh;
    color: white;
    display: flex;
    flex-direction: row;
    align-items: center;
-   font-size: 60px;
+   font-size: 3vw;
    font-family: sans-serif;
    font-weight: 100;
    position: relative;
-   padding-left: 50px;
+   padding-left: 3vw;
    animation-duration: 1.75s;
    animation-name: reboxslideleft;
    animation-fill-mode: forwards;
