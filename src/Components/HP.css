@@ -10,7 +10,15 @@
    width: 100vw;
    display: flex;
    flex-direction: row;
+}
+
+.Panel-layerHP {
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
    justify-content: space-around;
+   position: absolute;
 }
 
 .arrowHP:hover {
@@ -22,15 +30,22 @@
    margin-left: 3vw;
    width: 14vw;
    height: 25vh;
-   transition: all .2s ease-in-out;
-   animation-duration: 1.75s;
+   transition: all .5s ease-in-out;
+   animation-duration: 2s;
    animation-name: arrowHPfadein;
    animation-fill-mode: forwards;
 }
 
 @keyframes arrowHPfadein {
-   0% {opacity:0;}
-   100% {opacity:1;}
+   from {
+      width: 0;
+      height: 0;
+   }
+
+   to {
+      width: 14vw;
+      height: 25vh;
+   }
 }
 
 
@@ -43,15 +58,17 @@
    position: absolute;
    margin-top: 1.5vw;
    margin-left: 6vw;
-   animation-duration: 1.75s;
+   animation-duration: 2s;
    animation-name: hpgrow;
    animation-fill-mode: forwards;
 }
 
 @keyframes hpgrow {
    from {
-      height: 27.5vh;
-      width: 30vw;
+      margin-top: 1.5vw;
+      margin-left: 35.5vw;
+      height: 27vh;
+      width: 29.5vw;
    }
 
    to {
@@ -68,12 +85,23 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 67vw;
-   position: relative;
-   margin-left: 6vw;
-   animation-duration: 1.75s;
-   animation-name: hpfadein;
+   width: 79vw;
+   animation-duration: 2s;
+   animation-name: hptitleboxgrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes hptitleboxgrow {
+   from {
+      margin-left: 12vw;
+      margin-top: 2vh;
+      width: 0vw;
+      height: 0vh;
+   }
+   to {
+      width: 79vw;
+      height: 100%;
+   }
 }
 
 .TitleHP {
@@ -81,7 +109,21 @@
    font-weight: 100;
    color: #2b384d;
    font-size: 1.9vw;
+   animation-duration: 2s;
+   animation-name: hptitlegrow;
+   animation-fill-mode: forwards;
 }
+
+@keyframes hptitlegrow {
+   from {
+      margin-top: 0vh;
+      font-size: 0vw;
+   }
+   to {
+      font-size: 1.9vw;
+   }
+}
+
 
 .StampHP {
    font-family: sans-serif;
@@ -89,6 +131,18 @@
    color: #2b384d;
    font-size: 1vw;
    font-style: italic;
+   animation-duration: 2s;
+   animation-name: hpstampgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes hpstampgrow {
+   from {
+      font-size: 0vw;
+   }
+   to {
+      font-size: 1vw;
+   }
 }
 
 .hpdisplaybackground {
@@ -101,9 +155,21 @@
    justify-content: center;
    margin-left: 19vw;
    margin-top: 10px;
-   animation-duration: 1.75s;
-   animation-name: hpfadein;
+   animation-duration: 2s;
+   animation-name: hpdispbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes hpdispbggrow {
+   from {
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .hpdisplay {
@@ -130,9 +196,25 @@
    justify-content: center;
    margin-left: 65.5vw;
    margin-top: 39vh;
-   animation-duration: 1.75s;
-   animation-name: hpfadein;
+   animation-duration: 2s;
+   animation-name: hppopupbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes hppopupbggrow {
+   from {
+      margin-left: 20vw;
+      margin-top: 4vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 65.5vw;
+      margin-top: 39vh;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .hpdescbg {
@@ -145,9 +227,25 @@
    justify-content: center;
    margin-left: 65.5vw;
    margin-top: .6vw;
-   animation-duration: 1.75s;
-   animation-name: hpfadein;
+   animation-duration: 2s;
+   animation-name: hpdescbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes hpdescbggrow {
+   from {
+      margin-left: 20vw;
+      margin-top: 2vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 65.5vw;
+      margin-top: .6vw;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .hpdesc {
@@ -165,16 +263,21 @@
    font-weight: 100;
    color: #2b384d;
    font-size: 1.6vw;
+   animation-duration: 2s;
+   animation-name: hpdesctitlegrow;
+   animation-fill-mode: forwards;
 }
 
-.hpaward {
-   font-family: sans-serif;
-   font-weight: 100;
-   color: #2b384d;
-   font-style: italic;
-   text-align: center;
-   font-size: 1vw;
+@keyframes hpdesctitlegrow {
+   from {
+      font-size: 0vw;
+   }
+
+   to {
+      font-size: 1.6vw;
+   }
 }
+
 
 .hp-desc {
    font-family: sans-serif;
@@ -183,6 +286,19 @@
    text-align: center;
    padding: 10px;
    font-size: 1vw;
+   animation-duration: 2s;
+   animation-name: hpdescgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes hpdescgrow {
+   from {
+      font-size: 0vw;
+   }
+
+   to {
+      font-size: 1vw;
+   }
 }
 
 .hptechbg {
@@ -195,9 +311,24 @@
    justify-content: center;
    margin-left: 19vw;
    margin-top: 39vh;
-   animation-duration: 1.75s;
-   animation-name: hpfadein;
+   animation-duration: 2s;
+   animation-name: hptechbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes hptechbggrow {
+   from {
+      margin-top: 4vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 19vw;
+      margin-top: 39vh;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .hptech {
@@ -225,6 +356,23 @@
    align-items: center;
    justify-content: center;
    margin-bottom: 20px;
+   animation-duration: 2s;
+   animation-name: hptechboxgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes hptechboxgrow {
+   from {
+      height: 0vh;
+      width: 0vw;
+      font-size: 0vw;
+   }
+
+   to {
+      width: 9vw;
+      height: 4.5vw;
+      font-size: .85vw;
+   }
 }
 
 @keyframes hpfadein {

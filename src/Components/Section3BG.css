@@ -1,0 +1,153 @@
+.section3bg {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(160, 177, 168, .3);
+}
+
+.Panel3bg {
+   background-color: white;
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+}
+
+.Linkbg {
+   width: 14vw;
+   height: 25vh;
+}
+
+.arrow3bg:hover {
+   transform: scale(1.2);
+}
+
+.arrow3bg {
+   margin-left: 19vw;
+   top: 35vh;
+   width: 14vw;
+   height: 25vh;
+   position: absolute;
+}
+
+.backarrow3bg:hover {
+   transform: scale(1.2);
+}
+
+.backarrow3bg {
+   margin-left: 1vw;
+   top: 35vh;
+   width: 14vw;
+   height: 25vh;
+   position: absolute;
+}
+
+
+.Projectsbg {
+   background-color: rgba(189, 189, 189, .6);
+   width: 32vw;
+   height: 58vh;
+   font-family: sans-serif;
+   font-weight: 100;
+   font-size: 4vw;
+   color: white;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   padding-left: 3vw;
+   position: relative;
+   margin-left: 18vw;
+   margin-top: 8vh;
+}
+
+
+.RF-Boxbg {
+   height: 27.5vh;
+   width: 30vw;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   position: absolute;
+   gap: 2vw;
+   justify-content: space-around;
+   margin-top: 1.5vw;
+   margin-left: 18vw;
+}
+
+
+
+.HP-Boxbg {
+   height: 27.5vh;
+   width: 30vw;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: row;
+   gap: 1vw;
+   justify-content: space-around;
+   align-items: center;
+   position: absolute;
+   margin-top: 1.5vw;
+   margin-left: 53vw;
+}
+
+.Sudoku-Boxbg {
+   height: 27.5vh;
+   width: 30vw;
+   background-color: #FAF1EA;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   position: absolute;
+   margin-top: 25vw;
+   gap: 2vw;
+   justify-content: space-around;
+   margin-left: 34.5vw;
+}
+
+.RF-Titleboxbg {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.Titlebg {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: 1.8vw;
+}
+
+.Stampbg {
+   font-family: sans-serif;
+   font-weight: 100;
+   color: #2b384d;
+   font-size: 1vw;
+   font-style: italic;
+}
+
+.HP-Titleboxbg {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.Sudoku-Titleboxbg {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.Linkprojbg {
+   width: 100px;
+   height: 150px;
+}
+
+.arrowprojbg {
+   width: 120px;
+   height: 150px;
+   transition: all .2s ease-in-out;
+}
+
+.arrowprojbg:hover {
+   transform: scale(1.2);
+}

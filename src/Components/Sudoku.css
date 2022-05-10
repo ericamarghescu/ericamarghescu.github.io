@@ -10,7 +10,15 @@
    width: 100vw;
    display: flex;
    flex-direction: row;
+}
+
+.Panel-layerSU {
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
    justify-content: space-around;
+   position: absolute;
 }
 
 .arrowSU:hover {
@@ -22,36 +30,42 @@
    margin-left: 3vw;
    width: 14vw;
    height: 25vh;
-   transition: all .2s ease-in-out;
-   animation-duration: 1.75s;
+   transition: all .5s ease-in-out;
+   animation-duration: 2s;
    animation-name: arrowSUfadein;
    animation-fill-mode: forwards;
 }
 
 @keyframes arrowSUfadein {
-   0% {opacity:0;}
-   100% {opacity:1;}
+   from {
+      width: 0;
+      height: 0;
+   }
+
+   to {
+      width: 14vw;
+      height: 25vh;
+   }
 }
 
 
 .Sudoku-BoxSU {
    height: inherit;
-   width: 30vw;
    background-color: #FAF1EA;
    display: flex;
    flex-direction: row;
    position: absolute;
-   margin-top: 1.5vw;
-   margin-left: 6vw;
-   animation-duration: 1.75s;
+   animation-duration: 2s;
    animation-name: sugrow;
    animation-fill-mode: forwards;
 }
 
 @keyframes sugrow {
    from {
-      height: 27.5vh;
-      width: 30vw;
+      margin-top: 46vh;
+      margin-left: 0vw;
+      height: 27vh;
+      width: 30.5vw;
    }
 
    to {
@@ -69,11 +83,22 @@
    flex-direction: column;
    align-items: center;
    width: 67vw;
-   position: relative;
-   margin-left: 6vw;
-   animation-duration: 1.75s;
-   animation-name: sufadein;
+   animation-duration: 2s;
+   animation-name: sutitleboxgrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes sutitleboxgrow {
+   from {
+      margin-left: 12vw;
+      margin-top: 2vh;
+      width: 0vw;
+      height: 0vh;
+   }
+   to {
+      width: 79vw;
+      height: 100%;
+   }
 }
 
 .TitleSU {
@@ -81,6 +106,19 @@
    font-weight: 100;
    color: #2b384d;
    font-size: 1.9vw;
+   animation-duration: 2s;
+   animation-name: sutitlegrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes sutitlegrow {
+   from {
+      margin-top: 0vh;
+      font-size: 0vw;
+   }
+   to {
+      font-size: 1.9vw;
+   }
 }
 
 .StampSU {
@@ -89,6 +127,18 @@
    color: #2b384d;
    font-size: 1vw;
    font-style: italic;
+   animation-duration: 2s;
+   animation-name: sustampgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes sustampgrow {
+   from {
+      font-size: 0vw;
+   }
+   to {
+      font-size: 1vw;
+   }
 }
 
 .sudisplaybackground {
@@ -101,9 +151,21 @@
    justify-content: center;
    margin-left: 19vw;
    margin-top: 10px;
-   animation-duration: 1.75s;
-   animation-name: sufadein;
+   animation-duration: 2s;
+   animation-name: sudispbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes sudispbggrow {
+   from {
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .sudisplay {
@@ -130,9 +192,25 @@
    justify-content: center;
    margin-left: 65.5vw;
    margin-top: 39vh;
-   animation-duration: 1.75s;
-   animation-name: sufadein;
+   animation-duration: 2s;
+   animation-name: supopupbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes supopupbggrow {
+   from {
+      margin-left: 20vw;
+      margin-top: 4vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 65.5vw;
+      margin-top: 39vh;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .sudescbg {
@@ -145,9 +223,25 @@
    justify-content: center;
    margin-left: 65.5vw;
    margin-top: .6vw;
-   animation-duration: 1.75s;
-   animation-name: sufadein;
+   animation-duration: 2s;
+   animation-name: sudescbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes sudescbggrow {
+   from {
+      margin-left: 20vw;
+      margin-top: 2vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 65.5vw;
+      margin-top: .6vw;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .sudesc {
@@ -165,16 +259,21 @@
    font-weight: 100;
    color: #2b384d;
    font-size: 1.6vw;
+   animation-duration: 2s;
+   animation-name: sudesctitlegrow;
+   animation-fill-mode: forwards;
 }
 
-.suaward {
-   font-family: sans-serif;
-   font-weight: 100;
-   color: #2b384d;
-   font-style: italic;
-   text-align: center;
-   font-size: 1vw;
+@keyframes sudesctitlegrow {
+   from {
+      font-size: 0vw;
+   }
+
+   to {
+      font-size: 1.6vw;
+   }
 }
+
 
 .su-desc {
    font-family: sans-serif;
@@ -183,6 +282,19 @@
    text-align: center;
    padding: 10px;
    font-size: 1vw;
+   animation-duration: 2s;
+   animation-name: sudescgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes sudescgrow {
+   from {
+      font-size: 0vw;
+   }
+
+   to {
+      font-size: 1vw;
+   }
 }
 
 .sutechbg {
@@ -195,9 +307,24 @@
    justify-content: center;
    margin-left: 19vw;
    margin-top: 39vh;
-   animation-duration: 1.75s;
-   animation-name: sufadein;
+   animation-duration: 2s;
+   animation-name: sutechbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes sutechbggrow {
+   from {
+      margin-top: 4vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 19vw;
+      margin-top: 39vh;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .sutech {
@@ -225,6 +352,23 @@
    align-items: center;
    justify-content: center;
    margin-bottom: 20px;
+   animation-duration: 2s;
+   animation-name: sutechboxgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes sutechboxgrow {
+   from {
+      height: 0vh;
+      width: 0vw;
+      font-size: 0vw;
+   }
+
+   to {
+      width: 9vw;
+      height: 4.5vw;
+      font-size: .85vw;
+   }
 }
 
 @keyframes sufadein {

@@ -10,7 +10,14 @@
    width: 100vw;
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+}
+
+.Panel-layerRF {
+   height: 75vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+   position: absolute;
 }
 
 .arrowRF:hover {
@@ -22,36 +29,43 @@
    margin-left: 3vw;
    width: 14vw;
    height: 25vh;
-   transition: all .2s ease-in-out;
-   animation-duration: 1.75s;
+   transition: all .5s ease-in-out;
+   animation-duration: 2s;
    animation-name: arrowRFfadein;
    animation-fill-mode: forwards;
 }
 
 @keyframes arrowRFfadein {
-   0% {opacity:0;}
-   100% {opacity:1;}
+   from {
+      width: 0;
+      height: 0;
+   }
+
+   to {
+      width: 14vw;
+      height: 25vh;
+   }
 }
 
 
 .RF-BoxRF {
-   height: inherit;
-   width: 30vw;
    background-color: #FAF1EA;
    display: flex;
    flex-direction: row;
    position: absolute;
    margin-top: 1.5vw;
    margin-left: 6vw;
-   animation-duration: 1.75s;
+   animation-duration: 2s;
    animation-name: rfgrow;
    animation-fill-mode: forwards;
 }
 
 @keyframes rfgrow {
    from {
-      height: 27.5vh;
-      width: 30vw;
+      margin-top: 1.5vw;
+      margin-left: 18vw;
+      height: 27vh;
+      width: 29.5vw;
    }
 
    to {
@@ -68,12 +82,23 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 67vw;
-   position: relative;
-   margin-left: 6vw;
-   animation-duration: 1.75s;
-   animation-name: rffadein;
+   width: 79vw;
+   animation-duration: 2s;
+   animation-name: rftitleboxgrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes rftitleboxgrow {
+   from {
+      margin-left: 12vw;
+      margin-top: 2vh;
+      width: 0vw;
+      height: 0vh;
+   }
+   to {
+      width: 79vw;
+      height: 100%;
+   }
 }
 
 .TitleRF {
@@ -81,6 +106,19 @@
    font-weight: 100;
    color: #2b384d;
    font-size: 1.9vw;
+   animation-duration: 2s;
+   animation-name: rftitlegrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes rftitlegrow {
+   from {
+      margin-top: 0vh;
+      font-size: 0vw;
+   }
+   to {
+      font-size: 1.9vw;
+   }
 }
 
 .StampRF {
@@ -89,6 +127,18 @@
    color: #2b384d;
    font-size: 1vw;
    font-style: italic;
+   animation-duration: 2s;
+   animation-name: rfstampgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes rfstampgrow {
+   from {
+      font-size: 0vw;
+   }
+   to {
+      font-size: 1vw;
+   }
 }
 
 .rfdisplaybackground {
@@ -100,10 +150,22 @@
    align-items: center;
    justify-content: center;
    margin-left: 19vw;
-   margin-top: 10px;
-   animation-duration: 1.75s;
-   animation-name: rffadein;
+   margin-top: .6vw; 
+   animation-duration: 2s;
+   animation-name: rfdispbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes rfdispbggrow {
+   from {
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .rfdisplay {
@@ -128,11 +190,27 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 65.5vw;
-   margin-top: 39vh;
-   animation-duration: 1.75s;
-   animation-name: rffadein;
+/*    margin-left: 65.5vw;
+   margin-top: 39vh; */
+   animation-duration: 2s;
+   animation-name: rfpopupbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes rfpopupbggrow {
+   from {
+      margin-left: 20vw;
+      margin-top: 4vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 65.5vw;
+      margin-top: 39vh;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .rfdescbg {
@@ -143,11 +221,28 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 65.5vw;
-   margin-top: .6vw;
-   animation-duration: 1.75s;
-   animation-name: rffadein;
+/*    margin-left: 65.5vw;
+   margin-top: .6vw; */
+   animation-duration: 2s;
+   animation-name: rfdescbggrow;
    animation-fill-mode: forwards;
+}
+
+
+@keyframes rfdescbggrow {
+   from {
+      margin-left: 20vw;
+      margin-top: 2vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 65.5vw;
+      margin-top: .6vw;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .rfdesc {
@@ -165,7 +260,21 @@
    font-weight: 100;
    color: #2b384d;
    font-size: 1.6vw;
+   animation-duration: 2s;
+   animation-name: rfdesctitlegrow;
+   animation-fill-mode: forwards;
 }
+
+@keyframes rfdesctitlegrow {
+   from {
+      font-size: 0vw;
+   }
+
+   to {
+      font-size: 1.6vw;
+   }
+}
+
 
 .award {
    font-family: sans-serif;
@@ -174,6 +283,19 @@
    font-style: italic;
    text-align: center;
    font-size: 1vw;
+   animation-duration: 2s;
+   animation-name: rfdescawardgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes rfdescawardgrow {
+   from {
+      font-size: 0vw;
+   }
+
+   to {
+      font-size: 1vw;
+   }
 }
 
 .desc {
@@ -183,6 +305,19 @@
    text-align: center;
    padding: 10px;
    font-size: 1vw;
+   animation-duration: 2s;
+   animation-name: rfdescgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes rfdescgrow {
+   from {
+      font-size: 0vw;
+   }
+
+   to {
+      font-size: 1vw;
+   }
 }
 
 .rftechbg {
@@ -195,9 +330,24 @@
    justify-content: center;
    margin-left: 19vw;
    margin-top: 39vh;
-   animation-duration: 1.75s;
-   animation-name: rffadein;
+   animation-duration: 2s;
+   animation-name: rftechbggrow;
    animation-fill-mode: forwards;
+}
+
+@keyframes rftechbggrow {
+   from {
+      margin-top: 4vh;
+      height: 0vh;
+      width: 0vw;
+   }
+
+   to {
+      margin-left: 19vw;
+      margin-top: 39vh;
+      width: 28vw;
+      height: 34vh;
+   }
 }
 
 .rftech {
@@ -225,6 +375,23 @@
    align-items: center;
    justify-content: center;
    margin-bottom: 20px;
+   animation-duration: 2s;
+   animation-name: rftechboxgrow;
+   animation-fill-mode: forwards;
+}
+
+@keyframes rftechboxgrow {
+   from {
+      height: 0vh;
+      width: 0vw;
+      font-size: 0vw;
+   }
+
+   to {
+      width: 9vw;
+      height: 4.5vw;
+      font-size: .85vw;
+   }
 }
 
 @keyframes rffadein {
